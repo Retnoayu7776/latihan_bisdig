@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pacific Trails Resort</title>
+  <style>
+    :root {
+      --max: 880px;
+    }
+    body { font-family: Georgia, serif; line-height: 1.5; margin: 0; color: #111; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 24px; }
+    header h1 { font-size: 40px; margin: 0 0 12px; }
+    nav a { margin-right: 14px; }
+    nav { margin-bottom: 18px; }
+    h2 { font-size: 28px; margin: 18px 0 8px; }
+    ul { margin-top: 8px; }
+    .small { font-size: 14px; color: #333; }
+    .divider { border-top: 1px solid #ddd; margin: 24px 0; }
+    .muted { color: #666; }
+    .box { background: #fafafa; border: 1px solid #eee; padding: 12px 14px; border-radius: 8px; }
+    code { background: #f6f6f6; padding: 1px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header id="home">
+      <h1>Pacific Trails Resort</h1>
+      <!-- MENU menggunakan <a href> (internal fragment links) -->
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#yurts">Yurts</a>
+        <a href="#activities">Activities</a>
+        <a href="#reservations">Reservations</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Enjoy Nature in Luxury</h2>
+      <p>
+        Pacific Trails Resort offers a special lodging experience on the California North Coast
+        with panoramic views of the Pacific Ocean. Your stay at Pacific Trails Resort includes a
+        sumptuously appointed private yurt and a cooked‑to‑order breakfast each morning.
+      </p>
+
+      <ul>
+        <li>Unwind in the heated outdoor pool and whirlpool</li>
+        <li>Explore the coast on your own or join our guided tours</li>
+        <li>Relax in our lodge while enjoying complimentary appetizers and beverages</li>
+        <li>Savor nightly fine dining with an ocean view</li>
+      </ul>
+
+      <section id="yurts" class="divider">
+        <h2>Yurts</h2>
+        <p>Each yurt features a queen bed, skylight, and private deck with ocean view.</p>
+      </section>
+
+      <section id="activities" class="divider">
+        <h2>Activities</h2>
+        <p>Kayaking, tide‑pooling, coastal hikes, and sunset picnics are available daily.</p>
+      </section>
+
+      <section id="reservations" class="divider">
+        <h2>Reservations</h2>
+        <p>Call us at <strong>888‑555‑5555</strong> or email
+          <!-- EMAIL HYPERLINK -->
+          <a href="mailto:info@pacifictrails.example">info@pacifictrails.example</a>.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="box">
+        <h3>Contoh Jenis Hyperlink</h3>
+        <p class="small">
+          1) <strong>Absolute hyperlink</strong> (URL lengkap ke website luar & buka tab baru):
+          <a href="https://www.wikipedia.org" target="_blank" rel="noopener">https://www.wikipedia.org</a>
+        </p>
+        <p class="small">
+          2) <strong>Relative hyperlink</strong> (menuju file dalam proyek yang sama):
+          <a href="about.html">about.html</a> <span class="muted">(buat file <code>about.html</code> sendiri jika ingin dicoba)</span>
+        </p>
+        <p class="small">
+          3) <strong>Targeting hyperlink</strong> (mengatur <code>target</code> tempat terbuka):
+          <a href="https://example.com" target="_blank" rel="noopener">Buka di tab baru (_blank)</a>
+          ·
+          <a href="#home" target="_self">Buka di halaman yang sama (_self)</a>
+        </p>
+        <p class="small">
+          4) <strong>Email hyperlink</strong> (menggunakan <code>mailto:</code>):
+          <a href="mailto:reservations@pacifictrails.example?subject=Booking%20Inquiry">Kirim Email Reservasi</a>
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <address class="small">
+        <strong>Pacific Trails Resort</strong><br/>
+        12010 Pacific Trails Road<br/>
+        Zephyr, CA 95555
+      </address>
+
+      <p class="small muted">Copyright © 2025 Pacific Trails Resort</p>
+    </main>
+  </div>
+</body>
+</html>
